@@ -1,18 +1,18 @@
-#### Mars@hack
+# Mars@hack
 
-### Challenge Stegano_avion
+## Challenge Stegano_avion
 
 
-# Intitulé du challenge :
+### Intitulé du challenge :
 Suite à l’arrestation d'un terroriste, nous avons découvert en pièce jointe dans sa boite mail cette photo avec comme intitulé "Rassembler les cibles".
 Le Flag de validation doit avoir la forme suivante et en majuscules : MARS{CLEF}
 
-# Pièce jointe : map.jpeg
+### Pièce jointe : map.jpeg
 
 ![map.jpg](https://github.com/Casamandine/Mars_Hack/blob/master/Stegano_avion/image/map.jpg)
 
 
-# La solution :
+### La solution :
 Tout d’abord on va utiliser l’outil Binwalk qui va nous permettre d’extraire les fichiers incorporés, si il en a.
 
 ```
