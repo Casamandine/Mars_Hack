@@ -1,19 +1,18 @@
-Mars@hack
+#### Mars@hack
 
-Challenge Stegano_avion
+### Challenge Stegano_avion
 
 
-Intitulé du challenge :
+# Intitulé du challenge :
 Suite à l’arrestation d'un terroriste, nous avons découvert en pièce jointe dans sa boite mail cette photo avec comme intitulé "Rassembler les cibles".
 Le Flag de validation doit avoir la forme suivante et en majuscules : MARS{CLEF}
 
-Pièce jointe : map.jpeg
-
+# Pièce jointe : map.jpeg
 
 ![map.jpg](https://github.com/Casamandine/Mars_Hack/blob/master/Stegano_avion/image/map.jpg)
 
 
-La solution :
+# La solution :
 Tout d’abord on va utiliser l’outil Binwalk qui va nous permettre d’extraire les fichiers incorporés, si il en a.
 
 ```
@@ -56,9 +55,12 @@ Pour le suite, on va utiliser Exif qui va nous permettre d’extraire et d’enr
 ```
 $ exif -e map.jpeg
 ```
+
 Il faut répéter cette opération sur chaque fichier extrait, en les renommant suivant leur ordre de sortie.
 Après avoir récupèrer toutes les miniatures, avec la commande Exiftool on va regarder chaque miniature.
+
 Exemple avec l’image 1
+
 ```
 $ exiftool 1.jpeg
 ExifTool Version Number         : 11.10
@@ -105,6 +107,7 @@ Thumbnail Image                 : (Binary data 14761 bytes, use -b option to ext
 ```
 On peut vois qu’elle contient des coordonnées GPS. Et sur toutes les autres c’est la même chose et les coordonnées sont différentes.
 Après avoir récolter toutes les données GPS :
+
 ```
 01.jpeg	48 deg 51' 39.80" N	2 deg 8' 52.30" E
 02.jpeg	48 deg 48' 48.70" N	2 deg 11' 13.70" E
@@ -121,7 +124,9 @@ Après avoir récolter toutes les données GPS :
 ```
 De là, on va aller sur le site https://www.coordonnees-gps.fr/, rentrer les coordonnées GPS une à une et zoomer sur les bâtiments visés par les coordonnées en mode satellite.
 On remarque que chaque bâtiment représente une lettre composant le flag.
+
 Ainsi le flag était : 
+
 ```
 MARS{STEGANOPOWER}
 ```
