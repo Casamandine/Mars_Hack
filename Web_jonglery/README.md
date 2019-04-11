@@ -6,7 +6,7 @@
 ### Intitulé du challenge :
 Trouver un moyen de se connecter à l'interface de ce site.
 
-![Screenshot_1](screenshot1)
+![Screenshot_1](https://raw.githubusercontent.com/Casamandine/Mars_Hack/master/Web_jonglery/screenshot/Screenshot_1.png)
 
 
 <FONT COLOR="#ff0000">Accès au site :<br>   <a href="http://game2.marshack.fr:8087" target="new">http://game2.marshack.fr:8087</a></FONT> <p>
@@ -63,15 +63,15 @@ avec la comparaison faible ("==") **NULL == 0 !** Donc authentification bypass !
 
 Poue ce challenge, on a utilisé OWASP **Z**ed **A**ttack **P**roxy (**ZAP**) pour pouvoir modifié la variable envoyer.
 
-![Screenshot_2]()
+![Screenshot_2](https://raw.githubusercontent.com/Casamandine/Mars_Hack/master/Web_jonglery/screenshot/Screenshot_2.png)
 
 On met donc un tableau à la place de la variable "pass" :
 
-![Screenshot_3]()
+![Screenshot_3](https://raw.githubusercontent.com/Casamandine/Mars_Hack/master/Web_jonglery/screenshot/Screenshot_3.png)
 
 Puis on envoie la requête et on peut apercevoir le flag s'afficher sur le site.
 
-![Screenshot_4]()
+![Screenshot_4](https://raw.githubusercontent.com/Casamandine/Mars_Hack/master/Web_jonglery/screenshot/Screenshot_4.png)
 
 Ainsi le flag était :
 
