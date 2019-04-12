@@ -21,7 +21,7 @@ Comment a t'on compris qu'il fallait faire une attaque de type juggling ?
 
 On s'est fié à un mot qui revener souvent dans la page 'Jongleur', on l'a traduit en anglais et ça a donner 'Junggler' d'où le nom 'juggling'.
 
-En cherchant un peu, on est tombé sur ce site <a href="https://www.owasp.org/images/6/6b/PHPMagicTricks-TypeJuggling.pdf" traget="new">diaporama</a> qui nous explique les grandes lignes de cette attaque.
+En cherchant un peu, on est tombé sur ce <a href="https://www.owasp.org/images/6/6b/PHPMagicTricks-TypeJuggling.pdf" traget="new">diaporama</a> qui nous explique les grandes lignes de cette attaque.
 
 En PHP, il existe **2 types de comparaison**, la comparaison dite **"Faible"** (**_Loose_** en anglais) et la comparaison **"Stricte"** (**_strict_** en anglais). Le principe est simple, en admettant qu'on utilise ce code :
 
